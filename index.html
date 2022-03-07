@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Products</title>
+  </head>
+  <style>
+    #menu{
+      position: fixed;
+      top: 20%;
+      left: 50%;
+      margin-right: -50%;
+      width: 200px;
+      height: 50px;
+      transform: translate(-50%,-50%);
+      text-align: center;
+      display: inline-flex;
+      justify-content: center;
+      background-color: transparent;
+    }
+    button{
+      width: 150px;
+      height:40px;
+
+    }
+ #product_form{
+   margin-top: 25%;
+   margin-left: 50%;
+   width: 400px;
+   height: 250px;
+   transform: translate(-50%,-50%);
+   background-color: transparent;
+ }
+  </style>
+
+  <body>
+    <div id="menu">
+      <!--Create Show Products button here, give id as "show_products". avoid making spelling mistakes in HTML id's-->
+    
+    <div id="show_products">
+      <button onclick = main2()>
+        Show Products
+      </button>
+
+    </div>
+    </div>
+    <div id="input_form">
+      
+
+      <div id="product_form">
+        
+        <label>Enter Product Name:</label>
+        <input type="text" placeholder="Enter Product Name" id="Name">
+        <br>
+        <p>
+
+        </p>
+        <label>Enter Product Price:</label>
+        <input type="text" placeholder="Enter Product Price" id="Price">
+        <br>
+        <p>
+
+        </p>
+        <label>Enter Product Type:</label>
+       <select name="type" id="types">
+         <option value="Sneakers">Sneakers</option>
+         <option value="Loafers">Loafers</option>
+         <option value="Sports">Sports</option>
+       </select>
+       <br>
+       <p>
+
+       </p>
+       <label>Enter Product Image:</label>
+        <input type="text" placeholder="Enter Image_Url" id="image">
+        <br>
+        <p>
+
+        </p>
+        <input type="submit" onclick="main()">
+
+     
+      </div>
+
+   
+      
+    </div>
+  </body>
+</html>
+
+<script src="./scripts/index.js"></script>
+  
